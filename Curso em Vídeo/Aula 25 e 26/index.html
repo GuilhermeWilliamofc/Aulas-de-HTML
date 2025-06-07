@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 25 - Trabalhando com listas</title>
+    <link rel="shortcut icon" href="cursoemvideo.ico" type="image/x-icon">
+    <style>
+        dt{
+            padding-top: 15px;
+        }
+
+        dt#item1{
+            padding-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h1>Trabalhando com listas</h1>
+    <hr>
+    <h2>Listas Ordenadas</h2> <!--A ordem faz diferença-->
+    <hr>
+    <ol type="I"> <!--ordered lists <ol type="1" start="1"> é o padrão, type='A' é ordem alfabética e type='I' são números romanos->
+        <li>Acordar</li> <!--list item (o </li> é opcional e o <li> obrigatório)-->
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <hr>
+    <h2>Listas Não Ordenadas</h2> <!--A sequência não importa-->
+    <hr>
+    <ul type="circle"> <!--unordered lists <ul type="disc"> é o padrão, type='circle' é uma bolinha aberta e type='square' é um quadrado, aparentemente type no <ul> se tornou obsoleto, em CSS fica assim:
+        <ul style="list-style-type: square;">
+            <li> Item </li>
+        </ul>-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <hr>
+    <h2>Misturando Listas</h2>
+    <hr>
+    <h3>Exemplos:</h3>
+    <hr>
+    <h4>Minhas linguagens favoritas</h4>
+    <hr>
+    <ol type="1">
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!--o valor do parâmetro start no type alfabetico é númerico, ex: type='a' start='5' (vulgo letra 'E')-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <hr>
+    <h4>Meus jogos favoritos</h4>
+    <hr>
+    <ol>
+        <li>NES</li>
+            <ul type="disc">
+                <li>Mario Bros</li>
+                <ul type="disc">
+                    <li>Mario Bros 3</li>
+                    <li>Mario: Lost Levels</li>
+                </ul>
+                <li>Ninja Gaiden</li>
+            </ul>
+        <li>SNES</li>
+            <ul type="disc">
+                <li>Mario</li>
+                <li>Donkey Kong</li>
+            </ul>
+        <li>PlayStation</li>
+            <ul type="disc">
+                <li>Final Fantasy</li>
+                <li>Castlevania</li>
+            </ul>
+    </ol>
+    <hr>
+    <h2>Lista de Definições</h2>
+    <hr>
+    <dl> <!--Definition list-->
+        <dt id="item1">HTML</dt> <!--Termo-->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd> <!--Descrição-->
+
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+    <!--Dica: se ficar pressionado no alt, você consegue selecionar vários "cursores"-->
+</body>
+</html>
