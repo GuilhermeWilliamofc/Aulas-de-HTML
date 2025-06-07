@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 24 - Outras formatações</title>
+    <link rel="shortcut icon" href="cursoemvideo.ico" type="image/x-icon">
+</head>
+<body>
+    <hr>
+    <h1>Outras Formatações em HTML5</h1>
+    <hr>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <hr>
+    <p>O comando <code style="color: red;">document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p> 
+    <!--O color red eu fiz para destacar, não faz parte do <code> padrão-->
+    <hr>
+    <p>Código Python:</p>
+    <pre style="margin-top: -40px;"> <!--dentro da tag <pre> a tabulação é considerada-->
+        <code>
+numero = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {numero} é par')
+else:
+    print(f'O número {numero} é ímpar')
+print('Fim do programa')
+        </code>
+    </pre>
+    <hr>
+    <h2>Citações</h2>
+    <hr>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p> <!--a tag <q> vem da palavra quote do inglês-->
+    <hr>
+    <h2>Citações completas</h2>
+    <hr>
+    <p>Segundo Jeff Nobie, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_All_In_One_For_Dummie/-LdlRI0fT_UC?hl=pt-BR&gbpv=0"> <!--O cite vai mudar os mecânismos de busca e não vai ter mudanças visuais no site-->
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <hr>
+    <h2>Abreviações</h2>
+    <hr>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> <!--O parâmetro title é o significado da abreviação, quando o mouse fica encima da abreviação o significado aparece-->
+    <hr>
+    <h2>Texto invertido</h2>
+    <hr>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+</body>
+</html>
