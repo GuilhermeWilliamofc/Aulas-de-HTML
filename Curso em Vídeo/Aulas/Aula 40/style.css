@@ -1,0 +1,17 @@
+@charset 'UTF-8'; /*regra de compatibilidade para acentuação*/
+
+body{
+    background-color: lightskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    color: mediumblue;
+    text-align: justify;
+}
+
+h2{
+    color: darkred;
+    text-align: justify; /*O justify alinha as linhas do texto*/
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 35 - Vídeos com HTML5</title>
+    <link rel="shortcut icon" href="imagens/cursoemvideo.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <hr>
+    <p>Estes vídeos estão hospedados no meu próprio servidor.</p>
+    <video src="midia/Gato.webm" width="560" poster="imagens/gato_thumb.png" controls></video>
+    <video src="midia/Peixe.mp4" width="560" poster="imagens/peixe_thumb.png" controls></video>
+    <video src="midia/Peixe2.m4v" width="560" poster="imagens/peixe2_thumb.png" controls></video>
+    <video src="midia/cidade.webm" width="560" poster="imagens/cidade_thumb.png" controls></video>
+
+    <!-- <video width="500" controls>
+        <source src="midia/Gato.webm" type="video/webm">
+    </video> 
+    
+    é como a imagem, caso nenhum vídeo dentro da tag vídeo funcione pode colocar um paragrafo dizendo que o navegador não é compatível, a tag vídeo não é recomendado caso os vídeos sejam hospedados localmente, pois o site vai custar caro...
+    
+    o autoplay e loop também se aplica nas imagens-->
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <hr>
+    <p>Este vídeo está sendo hospedado pelo servidor do Youtube.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6CVsBOjeDzk?si=bWc59A5tYuzx_aR7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!--Youtube é recomendado para economizar dinheiro na hospedagem, o vimeo tem mais opções de incorporação e é mais profissional porém é mais pesado do que o Youtube-->
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 31 - Mídias em HTML5</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        audio{
+            display: block;
+            margin-bottom: 20px;
+        } /* para o áudio ficar um embaixo do outro */
+    </style>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--imagem pequena-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--imagem média-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível"> <!--imagem grande (imagem base)-->
+        <!--A ORDEM IMPORTA!-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/jungle_trip.mp3" controls></audio> <!--parâmetro controls para aparecer o menuzinho para reproduzir o áudio, o parâmetro autoplay toca a música automaticamente (não funcionou no meu navegador)-->
+
+    <audio preload="metadata" controls> 
+        <!--preload tem 3 valores (auto é o padrão, só vai carregar o site quando o audio tiver totalmente carregado, o metadata só vai carregar alguns dados do audio e o valor none vai carregar nada, somente quando o usuário clicar no play), aqui o parâmetro autoplay funciona, tem o parâmetro loop roda o áudio em loop-->
+        <source src="midia/delayed_baggage.mp3" type="audio/mp3"> <!--o type para mp3 é "audio/mpeg" e para wav é "audio/wav"-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/green_river.opus">Clique aqui para baixar o arquivo MP3</a></p> <!--Só aparece se o áudio não funcionar-->
+    </audio>
+</body>
+</html>
