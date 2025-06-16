@@ -1,0 +1,34 @@
+div{
+    display: inline-block; /*tudo na mesma linha*/
+    background-color: lightgray;
+    text-align: center;
+    height: 200px; /*altura*/
+    width: 200px; /*largura*/
+    border: 1px solid black; /*borda*/
+}
+
+div#d1{
+    background-color: lightblue;
+}
+
+div#d2{
+    background-color: lightgreen;
+}
+
+div#d3{
+    background-color: lightpink;
+}
+
+div#d1:hover{
+    background-color: chocolate;
+}
+
+div#d2:hover{
+    background-color: chocolate;
+}
+
+div#d3:hover{
+    background-color: chocolate;
+}
+
+/*a pseudo-classe hover significa quando eu passar o mouse encima*/

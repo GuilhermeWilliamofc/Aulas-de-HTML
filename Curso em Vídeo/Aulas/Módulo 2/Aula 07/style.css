@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #92BCEA, #AFB3F7);
+    background-attachment: fixed;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #a5f8d377;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    color: #011638;
+    text-align: center;
+    text-shadow: 1px 1px 2px #0116388c;
+    /*
+    uma dica é utilizar a mesma cor no shadow mas com a transparência menor
+    */
+}
+
+h2{
+    color: #7D1538;
+}
+
+p{
+    text-align: justify;
+}

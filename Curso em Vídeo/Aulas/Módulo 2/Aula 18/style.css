@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Old London';
+    src: url(fonts/OldLondon.ttf);
+}
+
+body{
+    background-color: #75E4B3;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    border-radius: 1%;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.308);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Old London';
+    font-size: 40px;
+}
+
+h2{
+    text-align: right;
+    font-family: 'Old London';
+    font-size: 28px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px; /*para ter um espacinho no começo do parágrafo*/
+}
+
+p#copy{
+    background-color: white;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10%;
+    text-indent: 0px;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.226);
+}

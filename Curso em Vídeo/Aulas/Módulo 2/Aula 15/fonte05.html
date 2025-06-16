@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 15 - Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Old London'; /*o nome personalizado para a sua fonte personalizada*/
+            src: url('fonts/OldLondon.ttf');
+            font-weight: normal;
+            font-style: normal;
+            /*
+            o nome tem que ser exatamente igual o do arquivo
+            O que você precisa saber sobre formatos:
+            - truetype (É suportado por vários navegadores e utilizado em fontes .ttf)
+            - opentype (É suportado por vários navegadores e utilizado em fontes .otf)
+
+            Mas se ambos são utilizados, qual eu devo escolher? Caso faça uma pesquisa breve, verá que os projetos atuais utilizam mais arquivos .otf, por tratar-se de ser uma "evolução" do truetype, que é mais antigo. Os designer de fontes atualmente costumam utilizar o .otf por ser mais versátil e adaptável.
+
+            existem também o embedded-opentype e o truetype-aat (Apple Advanced Typography) e por último o svg
+            */
+        }
+
+        @font-face {
+            font-family: 'DFPLEISHO-SB';
+            src: url('fonts/DFPLEISHO-SB.TTF');
+            font-weight: normal;
+            font-size: normal;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #87A0B2;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            border-radius: 1%;
+        }
+
+        h1{
+            font-family: 'Old London', Times, serif;
+            font-size: 3em;
+        }
+
+        p{
+            font-family: 'DFPLEISHO-SB';
+        }
+
+        p#copy{
+            background-color: white;
+            width: fit-content;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Título</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eligendi unde alias, dolor aut deserunt totam harum, laborum sunt cupiditate repudiandae eum odio veniam nulla reprehenderit facilis ut cumque ad.</p>
+    </main>
+    <p id="copy">&copy; Guilherme William</p>
+</body>
+</html>

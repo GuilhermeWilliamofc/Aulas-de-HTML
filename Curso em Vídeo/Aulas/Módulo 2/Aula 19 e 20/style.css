@@ -1,0 +1,52 @@
+@charset 'UTF-8';
+
+/*
+    em HTML é id = em CSS é # --> Id usa somente em 1 elemento
+    em HTML é class = em CSS é . --> Class usa em vários elementos
+    não dê nome as classes e id's baseado em cores e sim na funcionalidade
+*/
+
+body{
+    background-color: #FF4B3E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    border-radius: 1%;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.13);
+}
+
+h1, h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1.principal{
+    text-align: center;
+    color: #582707;
+}
+
+.html{
+    color: #e03d02;
+}
+
+.css{
+    color: #1E82C1;
+}
+
+img.logo{
+    width: 50px;
+    height: 50px;
+}
+
+p#copy{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    width: fit-content;
+    border-radius: 10%;
+    margin: 0 auto;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.13);
+}
