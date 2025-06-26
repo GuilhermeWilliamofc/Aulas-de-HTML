@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url(../fontes/idroid.otf);
+}
+
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: #84E1AD;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #3CD681, #1D5034);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+    padding: 10px;
+    margin: auto;
+}
+
+header > p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+nav > a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+nav > a:hover{
+    color: #1A5C38;
+    background-color: #25b466;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+h1#titulosite{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 30px; /*para ter um espacinho no começo do parágrafo*/
+}
+
+main > h1, h2{
+    font-family: 'idroid', monospace;
+    color: #367051;
+    background-color: #d4fde7;
+}
+
+main > h2{
+    padding-left: 15px;
+}
+
+img, source{
+    display: block;
+    margin: auto;
+}
+
+main > iframe{
+    display: block;
+    margin: auto;
+}
+
+p > strong{
+    color: #367051;
+}
+
+p > a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #367051;
+    background-color: #d4fde7;
+    padding: 5px;
+}
+
+p > a::after{
+    content: '\1F517';
+}
+
+p > a:hover{
+    text-decoration: underline;
+}
+
+h1#titulohistoria{
+    background-color: transparent;
+}
+
+section{
+    background-color: #C5EBD6;
+    border-radius: 9%;
+    padding: 0px 15px;
+}
+
+section > h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: #2FA866;
+    border-radius: 15%;
+}
+
+ul > p::before{
+    content: '\002714  ';
+}
+
+p > span{
+    text-decoration: underline;
+}
+
+#lista{
+    display: flex;
+    gap: 200px;
+}
+
+footer{
+    background-color: #1A5C38;
+    color: white;
+    padding: 1px;
+}
+
+footer > p{
+    text-align: center;
+}
+
+em{
+    font-weight: bold;
+}
+
+iframe{
+    background-color: #033D1A;
+    padding: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 220px;
+    padding-right: 220px;
+}

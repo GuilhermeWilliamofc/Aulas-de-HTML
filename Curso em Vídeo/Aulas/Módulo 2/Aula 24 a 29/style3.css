@@ -1,0 +1,13 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 20px solid transparent;
+    border-image-source: url('borda.png'); /*você cria uma imagem com os cantos de uma cor e o resto de outra cor, o meio fica vazio*/
+    border-image-slice: 27;
+    border-image-repeat: repeat; /*tem o strech também*/
+    padding: 10px;
+    /*
+    outra forma de digitar é:
+    border-image: url('borda.png') 27 repeat;
+    obs: a borda personalizada não funciona sem a borda normal
+    */
+}

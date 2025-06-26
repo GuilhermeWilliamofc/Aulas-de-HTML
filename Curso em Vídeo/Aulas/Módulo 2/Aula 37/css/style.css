@@ -1,0 +1,17 @@
+body{
+    background-color: gray;
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    min-width: 280px; /*a largura máxima quando a tela de celulares antigos tá de pé*/
+    max-width: 800px;
+    margin: auto;
+}
+
+img{
+    width: 100%; /*a imagem diminui quando a tela diminui*/
+}

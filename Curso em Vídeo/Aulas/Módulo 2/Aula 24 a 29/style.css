@@ -1,0 +1,42 @@
+h1{
+    background-color: #772D8B;
+    color: white;
+    height: 43px; /*altura*/
+    width: 420px; /*largura*/
+    border-width: 10px; /*largura da borda*/
+    border-style: solid;
+    border-color: #5A0B4D;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding-top: 5px; /*a ordem dos paddings é sentido horário*/
+    padding-right: 5px; /*padding fica da borda para dentro*/
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+    /*margin: auto; para ficar centralizado*/
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+
+    outline-width: 5px; /*outline fica da borda para fora*/
+    outline-style: dashed;
+    outline-color: #772D8B;
+
+    /*pode resumir essas linhas acima com shorthands, vale para o border, padding e margin, a ordem do padding e margin é sentido horário (cima, direita, baixo, esquerda), caso seja tudo o mesmo valor digite somente uma vez, digite dois valores caso queira um valor para cima e baixo e para esquerda e direita*/
+
+    /*
+    para transformar um box-level em inline utilize: "display: inline;" mas o width e o height ficam inutilizaveis, o contrário também serve, usando "display: block;" e também tem o display: inline-block; que é um inline com algumas caracteristicas de block, nesse caso o width e height podem ser utilizados
+    */
+}
+
+a{
+    border-width: 2px;
+    border-style: dashed; /*pontilhado, também tem o dotted, double e o groove*/
+    border-color: #5A0B4D;
+
+    padding-top: 5px; 
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
