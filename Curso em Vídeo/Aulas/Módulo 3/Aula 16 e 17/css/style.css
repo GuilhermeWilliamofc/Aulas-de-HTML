@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    margin: 0px;
+    background-color: black;
+    background-image: url(../images/wallpaper002.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*
+    background-size: 100% 100%; tem distorção de imagem
+    contain; a imagem é 100% exibida, com laterais vazias as vezes
+    cover; cobre a tela toda mesmo que tenha que cortar a imagem
+    */
+    background-attachment: fixed; 
+    /*
+    background-attachment: 
+    scroll -> padrão; o fundo rola junto com o conteúdo
+    fixed -> fundo fixo à tela, a medida que o conteúdo rola
+    (ótimo combinado com background-size: cover;)
+
+    Shorthand - background:
+
+    Sequência:	color > image > position > / > size > repeat > attachment
+
+    Ex:	background: black url('imagens/wallpaper002.jpg') center center / cover no-repeat fixed;
+    */
+}
+
+main{
+    background-color: white;
+    max-width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid darkblue;
+    border-radius: 15px;
+}

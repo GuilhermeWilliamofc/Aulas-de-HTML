@@ -1,0 +1,40 @@
+#container{ /*O que tá de fora (container) -> position: relative*/
+    background-image: url(../images/target001.png);
+    background-size: 100% 100%;
+    position: relative; /*opcional; em CSS já é relative por padrão*/
+    height: 100vh;
+    margin: 0px;
+    padding: 10px;
+    background-color: purple;
+}
+
+#conteudo{ /*O que tá de dentro (conteúdo) -> position: absolute*/
+    background-image: url(../images/target001.png);
+    background-size: 100% 100%;
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: yellow;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/*
+Outra forma de resolver:
+
+#container {
+    display: flex; 
+    - Possui diversas funções (procurem pela documentação), uma delas é habilitar o manejamento do conteúdo
+
+    justify-content: center; 
+    - Alinhamento horizontal, ou seja, dispensa o "margin: auto"
+
+    align-items: center; 
+    - Alinhamento vertical
+}
+
+Essas propriedades sempre são colocadas no elemento-pai (container), não se esqueçam desse importante detalhe.
+*/

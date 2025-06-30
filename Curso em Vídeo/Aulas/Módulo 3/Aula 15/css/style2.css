@@ -1,0 +1,9 @@
+body{
+    height: 100vh; /*100% da parte branca (view port)*/
+    margin: 0px;
+    border: 1px dashed black;
+    background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
+    background-size: 100px; /*tamanho da foto de fundo*/
+    background-repeat: no-repeat; /*se quer que a imagem se repita*/
+    background-position: right bottom; /*primeiro coluna depois linha*/
+}
