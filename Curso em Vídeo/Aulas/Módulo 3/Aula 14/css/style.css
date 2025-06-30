@@ -1,0 +1,12 @@
+body{
+    background-image: url(../images/pattern001.png);
+    background-size: 100px 100px;
+    background-repeat: repeat;
+}
+
+h1{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5%;
+    padding: 10px;
+}
