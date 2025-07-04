@@ -9,6 +9,7 @@ h1{
 table{
     width: 500px;
     border-collapse: collapse;
+    position: relative; /*para fixar o cabeçalho*/
 }
 
 caption{
@@ -17,6 +18,12 @@ caption{
     padding: 10px;
     background-color: lightgray;
     border: 1px solid black;
+}
+
+thead > tr > th{ /*para fixar o cabeçalho (não funciona em todos os navegadores)*/
+    position: sticky;
+    top: -1px;
+    background-color: gray;
 }
 
 td, th{
