@@ -11,6 +11,7 @@
     <!--
         Anatomia para tabelas grandes
         Table
+            Caption
             Thead
                 Tr, Td, Th
             Tbody
@@ -19,14 +20,14 @@
                 Tr, Td, Th
     -->
     <table>
+        <caption>
+            Unidades federativas do Brasil por população
+        </caption>
         <thead>
             <tr>
-                <th colspan="3">Unidades federativas do Brasil por população</th>
-            </tr>
-            <tr>
                 <th></th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th> <!--o scope não tem efeito visual, é só para os mecanismos de busca-->
             </tr>
         </thead>
         <tbody>
@@ -169,7 +170,7 @@
         <tfoot>
             <tr>
                 <th></th>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">212 583 750</td>
             </tr>
         </tfoot>
