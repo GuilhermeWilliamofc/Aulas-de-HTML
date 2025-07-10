@@ -1,10 +1,6 @@
 body{
     background-image: url(../images/fundo-madeira.jpg);
-    height: 83vh;
     background-size: 100% 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
 }
 
 section#iphone{
@@ -12,8 +8,8 @@ section#iphone{
     background-repeat: no-repeat;
     background-position: center center;
     height: 627px;
-    display: block;
-    margin: auto;
+    position: relative;
+    top: 15vh;
 }
 
 iframe{
@@ -22,18 +18,13 @@ iframe{
     bottom: 8px;
     display: block;
     margin: auto;
-    margin-top: 17vh;
     padding-top: 80px;
     height: 507px;
     width: 275px;
 }
 
 section a{
-    display: flex;
-    justify-content: right;
-    position: relative;
-    bottom: 84vh;
-    right: 8px;
+    width: 50px;
 }
 
 section img{
@@ -42,7 +33,7 @@ section img{
 }
 
 section li{
-    padding-bottom: 10px;
+    position: relative;
 }
 
 section img:hover{
@@ -53,4 +44,13 @@ section img:hover{
 
 section ul{
     list-style: none;
+    width: 0px;
+}
+
+section#links{
+    position: relative;
+    bottom: 65vh;
+    right: 50px;
+    display: flex;
+    justify-content: right;
 }
