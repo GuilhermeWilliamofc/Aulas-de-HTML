@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 17 - Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Meu primeiro formulário</h1>
+        <hr>
+        <form autocomplete="off"> <!--autocomplete: off para desativar as sugestões de resposta-->
+            <p>
+                <label for="nome">Nome:</label> <!--dentro do for você coloca o nome do id-->
+                <input type="text" name="nome" id="nome">
+            </p>
+            <p>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </p>
+            <p id="mensagem"></p>
+        </form>
+        <p id="enviar">
+            <input id="submit" type="submit" value="Enviar" onclick="mostrardados()">
+        </p>
+    </main>
+</body>
+<script src="cadastro.js"></script>
+</html>
