@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 24 - Formulário</title>
+    <link rel="stylesheet" href="../Aula 23/css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Exemplo de Formulário</h1>
+        <form method="get" autocomplete="on">
+            <fieldset>
+                <legend>Sexo</legend> <!-- o name do radio precisa ser igual para todas as opções, caso contrário todas as opções poderão ser marcadas ao mesmo tempo, mas não terá como desmarcá-las, também adicionar checked em uma das opções para evitar do usuário deixar desmarcado -->
+                <input type="radio" name="sexo" id="isxmas" value="M" checked>
+                <label for="isxmas">Masculino</label>
+                <input type="radio" name="sexo" id="isxfem" value="F">
+                <label for="isxfem">Feminino</label>
+                <!-- o value no radio é o valor que vai ser mandado caso a opção esteja marcada -->
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Esportes favoritos</legend>
+                <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label>
+                <br>
+                <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+                <br>
+                <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+                <br>
+                <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+</body>
+</html>
