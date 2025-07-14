@@ -10,7 +10,7 @@
     <main>
         <h1>Meu primeiro formulário</h1>
         <hr>
-        <form autocomplete="off"> <!--autocomplete: off para desativar as sugestões de resposta-->
+        <form autocomplete="off"> <!--autocomplete: off para desativar as sugestões de resposta, por padrão o method="get" (os dados inseridos no formulário aparece na url), o get tem um limite de 3000 bytes (3000 letras aproximadamente), get não é recomendado com imagens, vídeos ou dados sensíveis (senhas), post não é 100% seguro também, post também é bom para enviar arquivos, recomendado saber sobre https-->
             <p>
                 <label for="nome">Nome:</label> <!--dentro do for você coloca o nome do id-->
                 <input type="text" name="nome" id="nome">

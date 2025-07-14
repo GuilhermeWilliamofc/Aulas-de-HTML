@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 20 - Teste de Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <hr>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusuario">Usuário: </label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="15" placeholder="Nome do Usuário" autocomplete="username"> <!--required para deixar o campo obrigatório, o min e max length são o minimo e máximo de caracteres, o size é o tamanho da caixa, cada número é uma letra, exemplo: "size=15" quer dizer que o tamanho é de até 15 letras, placeholder é um textinho cinza que dá dica para o usuário, autocomplete no input tem vários valores que podem ser colocados-->
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="20" placeholder="Mínimo 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
