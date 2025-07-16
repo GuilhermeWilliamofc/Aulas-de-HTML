@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 27 - Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <main>
+        <h1>Exemplo de Formulário</h1>
+        <hr>
+        <form method="get" autocomplete="on">
+            <p>
+                <label for="inum">Número: </label>
+                <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="nivel()">
+                <span id="itexto">5</span>
+                <!-- na aula adicionou output no lugar desse span mas como dito anteriormente o output pelo menos pra mim estava impedindo o js externo de funcionar -->
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+</body>
+<script src="js/script2.js"></script>
+</html>
