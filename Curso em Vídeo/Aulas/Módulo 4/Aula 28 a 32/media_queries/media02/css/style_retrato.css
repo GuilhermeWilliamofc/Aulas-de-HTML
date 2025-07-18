@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* Aparelho em pé */
+
+body{
+    background-image: url(../images/cev-portrait.jpg);
+}
+
+h1{
+    padding-top: 20vh;
+}
