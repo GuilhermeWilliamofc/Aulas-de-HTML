@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 36 - Media Query</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_media_query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"> <!-- css do google para adicionar icones -->
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span class="material-icons" id="menu_hamburguer" onclick="abrir_fechar_menu()">menu</span>
+        <menu id="menu_opcoes">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -30,4 +33,5 @@
         </article>
     </main>
 </body>
+<script src="js/script.js"></script>
 </html>
