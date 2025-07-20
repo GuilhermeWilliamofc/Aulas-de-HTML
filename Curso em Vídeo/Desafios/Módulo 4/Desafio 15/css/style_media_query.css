@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints:
+    -------------------------
+    Pequenas telas: até 600px
+    Celular: de 600px até 768px
+    Tablet: 768px até 992px
+    Desktop: 992px até 1200px
+    Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* se for um tablet */
+    body{
+        background-image: linear-gradient(to bottom, #552774, #499E9C);
+        background-attachment: fixed;
+    }
+
+    section#janela_login{
+        width: 760px;
+        height: 370px;
+    }
+
+    img#imagem_login{
+        height: 370px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    div#formulario{
+        position: absolute;
+        top: 48%;
+        left: 66.5%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+    }
+
+    div.input input{
+        width: 430px;
+    }
+
+    div p{
+        font-size: 0.8em;
+    }
+
+    div input[type="submit"]{
+        width: 500px;
+    }
+
+    div a{
+        width: 475px;
+    }
+}
+
+@media screen and (min-width: 992px) { /* se for maior que um tablet */
+    body{
+        background-image: linear-gradient(to bottom, #552774, #499E9C);
+        background-attachment: fixed;
+        font-size: 1.1em;
+    }
+
+    img#imagem_login{
+        position: absolute;
+        left: 55%;
+        height: 420px;
+        width: 415px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+    }
+
+    section#janela_login{
+        width: 920px;
+        height: 420px;
+    }
+
+    div#formulario{
+        position: absolute;
+        top: 50%;
+        left: 27.5%;
+        transform: translate(-50%, -50%);
+        width: 458px;
+    }
+
+    div.input input{
+        width: 430px;
+    }
+
+    div input[type="submit"]{
+        width: 458px;
+        font-size: 1.1em;
+    }
+
+    div a{
+        width: 439px;
+    }
+}
