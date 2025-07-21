@@ -17,12 +17,12 @@ section#janela_login{
     transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 10px;
-    width: 250px;
+    width: 270px;
     height: 650px;
 }
 
 img#imagem_login{
-    width: 250px;
+    width: 270px;
     height: 200px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;

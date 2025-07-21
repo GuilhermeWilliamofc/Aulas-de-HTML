@@ -23,6 +23,7 @@
     }
 
     img#imagem_login{
+        width: 250px;
         height: 300px;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 10px;
@@ -30,7 +31,7 @@
 
     div#formulario{
         position: absolute;
-        top: 58%;
+        top: 52%;
         left: 66.5%;
         transform: translate(-50%, -50%);
         width: 500px;
@@ -45,11 +46,16 @@
     }
 
     div input[type="submit"]{
-        width: 500px;
+        display: inline;
+        width: 240px;
     }
 
-    div a{
-        width: 475px;
+    div a#esqueci{
+        display: inline;
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 }
 
@@ -77,10 +83,10 @@
 
     div#formulario{
         position: absolute;
-        top: 50%;
+        top: 48%;
         left: 27.5%;
         transform: translate(-50%, -50%);
-        width: 458px;
+        width: 495px;
     }
 
     div.input input{
