@@ -19,6 +19,7 @@ section#janela_login{
     border-radius: 10px;
     width: 270px;
     height: 650px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.404);
 }
 
 img#imagem_login{
