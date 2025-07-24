@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09 - Flexbox</title>
+    <style>
+        div.conteiner{
+            background-color: lightsalmon;
+
+            display: flex; /* vai adaptar o conteúdo, o pai deve receber essa configuração */
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+            /* por padrão:
+                flex-basis: auto;
+            (o tamanho do item vai se adaptar para caber o conteúdo)
+            caso coloque o tamanho personalizado e a tela for menor que esse tamanho, os itens vão voltar a se adaptar para caber o conteúdo (no caso do "nowrap", caso seja "wrap" os itens vão quebrar de linha)
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">Outro conteúdo</div>
+        <div class="item">C</div>
+        <div class="item">Conteúdo um pouco maior</div>
+        <div class="item">E</div>
+        <div class="item">Conteúdo maior ainda, que vai ocupar mais espaço.</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
