@@ -24,13 +24,14 @@
         border-radius: 5px;
         margin-bottom: 15px;
         font-size: 2em;
+        cursor: pointer;
     }
 
     span#icone:active{
         background-color: #1380af;
     }
 
-    nav#menu{
+    nav{
         display: none;
     }
 

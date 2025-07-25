@@ -3,7 +3,10 @@ function menu_hamburguer(){
     if (opcoes.style.display == 'none'){
         opcoes.style.display = 'block'
     }
-    else{
+    else if (opcoes.style.display == 'block'){
         opcoes.style.display = 'none'
+    }
+    else{
+        opcoes.style.display = 'block'
     }
 }

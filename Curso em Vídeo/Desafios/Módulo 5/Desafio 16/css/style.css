@@ -27,10 +27,6 @@ header > h1{
     margin-bottom: 15px;
 }
 
-nav#menu{
-    display: block;
-}
-
 a.opcao_menu{
     background-color: #41e694b6;
     border: 2px solid white;
