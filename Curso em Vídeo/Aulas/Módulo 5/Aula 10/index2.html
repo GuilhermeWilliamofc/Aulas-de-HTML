@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - Flexbox</title>
+    <style>
+        div.conteiner{
+            background-color: lightsalmon;
+
+            display: flex; /* vai adaptar o conteúdo, o pai deve receber essa configuração */
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+
+            /*  por padrão:
+                flex-shrink: 1; se os itens podem diminuir caso o tamanho da tela seja menor do que o tamanho dos itens, caso o valor seja maior q 1 e tenha algum item com o valor menor q esse valor maior q 1 o item vai diminuir de forma proporcional, exemplo, um item com shrink 1 e outro com 2, ele vai diminuir o dobro (não é pq é 2 q é dobro é pq o 2 é o dobro de 1, se os dois itens fossem 2 os dois teriam o mesmo tamanho) isso vale para o flex-grow também
+                flex-grow: 0; se os itens podem aumentar caso o tamanho da tela seja maior do que o tamanho dos itens
+                (essa config é adicionada nos itens não no pai)
+            */
+        }
+
+        div#cxA{
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        div#cxB{
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+
+        div#cxC{
+            flex-shrink: 8;
+            flex-grow: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>
