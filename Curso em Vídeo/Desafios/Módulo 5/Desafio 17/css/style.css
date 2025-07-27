@@ -32,20 +32,19 @@ section#media_text{
     align-items: flex-end;
 }
 
-section > img, section > iframe, section > div{
+/* section > img, section > iframe, section > div{
     border: 2px dotted black;
-}
+} */
 
 section > div.texto{
     display: flex;
     flex-flow: column;
     padding: 10px;
-    flex: 0 1 50vw;
+    flex: 0 1 650px;
 }
 
 section > img{
-    flex: 0 0 20vw;
-    height: 35vh;
+    flex: 0 1 560px;
 }
 
 section#text_media{
