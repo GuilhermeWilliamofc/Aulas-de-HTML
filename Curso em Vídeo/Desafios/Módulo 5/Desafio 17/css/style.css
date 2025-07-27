@@ -24,13 +24,13 @@ h2, p{
 article{
     background-color: lightgray;
     padding: 10px;
+    overflow: hidden;
 }
 
 section#media_text{
     display: flex;
     justify-content: space-around;
     flex-flow: wrap-reverse;
-    align-items: flex-end;
 }
 
 /* section > img, section > iframe, section > div{
@@ -46,11 +46,11 @@ section > div.texto{
 
 section > img{
     flex: 0 1 560px;
+    max-width: 100%;
 }
 
 section#text_media{
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
-    align-items: flex-start;
 }
