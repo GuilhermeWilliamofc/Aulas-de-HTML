@@ -1,0 +1,14 @@
+div.container{
+    border: 3px solid blue;
+    height: 250px;
+    padding: 5px;
+    display: grid; /* inicialmente parece que nada mudou diferente do "display: flex;" */
+    grid-template-columns: auto auto auto; /* cria as colunas do grid, cada valor novo adicionado é uma coluna nova */
+    grid-template-rows: auto auto auto; /* cria as linhas do grid, cada valor novo adicionado é uma linha nova */
+    gap: 5px; /* antes se chamava grid-gap mas foi depreciado e agora se chama somente gap, ele é responsável pelos espaços entre os itens */
+}
+
+div.item{
+    border: 3px solid red;
+    padding: 5px;
+}
