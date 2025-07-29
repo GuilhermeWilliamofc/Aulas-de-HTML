@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+div.container{
+    border: 3px solid blue;
+    height: 250px;
+    display: grid; /* inicialmente parece que nada mudou diferente do "display: flex;" */
+    grid-template-columns: auto auto auto; /* cria as colunas do grid, cada valor novo adicionado é uma coluna nova */
+    grid-template-rows: auto auto auto; /* cria as linhas do grid, cada valor novo adicionado é uma linha nova */
+    gap: 5px; /* antes se chamava grid-gap mas foi depreciado e agora se chama somente gap, ele é responsável pelos espaços entre os itens */
+    align-items: normal; /* por padrão é stretch/normal, é responsável pelo posicionamento vertical dos itens, tem as configs (start (vai colar no topo), center (vai colar no centro), end (vai colar embaixo), stretch (vai esticar)) */
+    justify-items: normal; /* por padrão é stretch/normal, é responsável pelo posicionamento horizontal dos itens, tem as configs (start (vai colar na esquerda), center (vai colar no centro), end (vai colar na direita), stretch (vai esticar)) */
+    align-content: normal; /* por padrão é stretch/normal, é responsável pelo posicionamento vertical da caixa que contorna todos os itens, tem as configs (start (vai colar no topo), center (vai colar no centro), end (vai colar embaixo), stretch (vai esticar)), space-between (o primeiro elemento vai colar no topo e o ultimo vai colar embaixo e o resto dos itens vai ter espaço igual entre eles), space-around (o primeiro e ultimo elemento vai ter um espaço menor entre as bordas do que os outros itens), space-evenly (todos os itens tem o mesmo espaço entre eles) */
+    justify-content: normal; /* por padrão é stretch/normal, é responsável pelo posicionamento horizontal da caixa que contorna todos os itens, tem as configs (start (vai colar na esquerda), center (vai colar no centro), end (vai colar na direita), stretch (vai esticar)), space-between (o primeiro elemento vai colar na esquerda e o ultimo vai colar na direita e o resto dos itens vai ter espaço igual entre eles), space-around (o primeiro e ultimo elemento vai ter um espaço menor entre as bordas do que os outros itens), space-evenly (todos os itens tem o mesmo espaço entre eles) */
+}
+
+div.item{
+    border: 3px solid red;
+    padding: 5px;
+}
