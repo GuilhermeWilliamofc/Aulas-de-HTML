@@ -6,8 +6,8 @@ div.container{
     border: 3px solid blue;
     height: 250px;
     display: grid; /* inicialmente parece que nada mudou diferente do "display: flex;" */
-    grid-template-columns: auto auto auto; /* cria as colunas do grid, cada valor novo adicionado é uma coluna nova */
-    grid-template-rows: auto auto auto; /* cria as linhas do grid, cada valor novo adicionado é uma linha nova */
+    grid-template-columns: auto auto auto; /* cria as colunas do grid, cada valor novo adicionado é uma coluna nova, o "auto" faz com que a largura de cada coluna seja igual */
+    grid-template-rows: auto auto auto; /* cria as linhas do grid, cada valor novo adicionado é uma linha nova, o "auto" faz com que a altura de cada coluna seja igual */
     gap: 5px; /* antes se chamava grid-gap mas foi depreciado e agora se chama somente gap, ele é responsável pelos espaços entre os itens */
     align-items: normal; /* por padrão é stretch/normal, é responsável pelo posicionamento vertical dos itens, tem as configs (start (vai colar no topo), center (vai colar no centro), end (vai colar embaixo), stretch (vai esticar)) */
     justify-items: normal; /* por padrão é stretch/normal, é responsável pelo posicionamento horizontal dos itens, tem as configs (start (vai colar na esquerda), center (vai colar no centro), end (vai colar na direita), stretch (vai esticar)) */
