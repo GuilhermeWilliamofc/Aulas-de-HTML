@@ -4,17 +4,19 @@ header{
     margin: 10px 0px;
 }
 
-header > nav{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-}
+@media screen and (max-width: 768px) {
+    header > nav{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
 
-nav > a{
-    padding: 10px;
-    font-size: 1.2em;
-    margin-left: 20px;
+    nav > a{
+        padding: 10px;
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
 }
 
 h2{
