@@ -33,6 +33,10 @@ aside{
     grid-column: 1 / 5;
 }
 
+aside > img{
+    max-width: 90vw;
+}
+
 footer{
     grid-row: 8 / 9;
     grid-column: 1 / 5;

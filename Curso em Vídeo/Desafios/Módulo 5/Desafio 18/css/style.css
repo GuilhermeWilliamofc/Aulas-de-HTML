@@ -87,8 +87,11 @@ aside{
 }
 
 aside > img{
+    max-width: 22vw;
     max-height: 50vh;
     border-radius: 15px;
+    justify-self: center;
+    align-self: center;
 }
 
 main, aside{
