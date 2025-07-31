@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+header{
+    margin: 10px 0px;
+}
+
+header > nav{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > a{
+    padding: 10px;
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+main{
+    grid-row: 2 / 5;
+    grid-column: 1 / 5;
+}
+
+aside{
+    grid-row: 5 / 8;
+    grid-column: 1 / 5;
+}
+
+footer{
+    grid-row: 8 / 9;
+    grid-column: 1 / 5;
+    margin-bottom: 10px;
+}

@@ -17,10 +17,11 @@ div.caixa1{
     background-color: #DF2935;
     color: white;
     text-align: center;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 5; /* também pode ser usado "-1" pra dizer que é a última coluna, "-2" penúltima, "-3" antepenúltima e por aí vai */
+    grid-row-start: 1; /* o row start diz a linha da grade que o item começa */
+    grid-row-end: 2; /* o row end diz a linha da grade que o item termina */
+    grid-column-start: 1; /* o column start diz a coluna da grade que o item começa */
+    grid-column-end: 5; /* o column end diz a coluna da grade que o item termina */
+    /* também pode ser usado "-1" pra dizer que é a última coluna, "-2" penúltima, "-3" antepenúltima e por aí vai */
 }
 
 div.caixa2{

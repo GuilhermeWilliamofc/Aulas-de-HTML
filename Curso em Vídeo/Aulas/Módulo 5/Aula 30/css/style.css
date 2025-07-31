@@ -1,0 +1,66 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+div.container{
+    background-color: black;
+    display: grid;
+    border: 5px solid black;
+    grid-template: repeat(3, 100px) / repeat(4, 1fr);
+    gap: 5px;
+}
+
+div.caixa1{
+    display: grid;
+    align-items: center;
+    background-color: #DF2935;
+    color: white;
+    text-align: center;
+    grid-row: 1 / span 1; /* é um shorthand para o grid-row, a ordem é start e end, os valores dos dois são separados por "/" (barra), O span é uma outra forma de indicar quantas linhas ou colunas o elemento deve ocupar no grid. Por exemplo, grid-row: 1 / span 2 significa que o elemento começa na linha 1 e ocupa mais 2 linhas, ou seja, vai até a linha 3.*/
+    /* ------------ */
+    /* o row start diz a linha da grade que o item começa */
+    /* o row end diz a linha da grade que o item termina */
+    /* ------------ */
+    grid-column: 1 / span 4; /* é um shorthand para o grid-column, a ordem é start e end */
+    /* ------------ */
+    /* o column start diz a coluna da grade que o item começa */
+    /* o column end diz a coluna da grade que o item termina */
+    /* ------------ */
+    /* Também é possível usar valores negativos como -1 para indicar posições a partir do final. Por exemplo, -1 representa a última linha ou coluna, -2 a penúltima, -3 a antepenúltima, e assim por diante. */
+    /* ------------ */
+    /* É possível simplificar ainda mais usando a propriedade grid-area, que aceita quatro valores na seguinte ordem: grid-row-start, grid-column-start, grid-row-end, grid-column-end, separados por barras (/).
+    
+    Exemplo:
+        grid-area: 1 / 1 / 2 / 4
+    */
+}
+
+div.caixa2{
+    display: grid;
+    align-items: center;
+    background-color: #4F772D;
+    color: white;
+    text-align: center;
+    grid-row: 2 / 4;
+    grid-column: 1 / 3;
+}
+
+div.caixa3{
+    display: grid;
+    align-items: center;
+    background-color: #A9FFF7;
+    text-align: center;
+    grid-row: 2 / 4;
+    grid-column: 3 / 5;
+}
+
+div > p{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+    width: fit-content;
+    margin: auto;
+}
